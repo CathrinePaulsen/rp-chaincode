@@ -1,4 +1,9 @@
 /*
+Copyright 2021 Cathrine Paulsen All Rights Reserved.
+SPDX-License-Identifier: Apache-2.0
+*/
+
+/*
 INITIALIZE LEDGER:
 peer chaincode invoke -o localhost:7050 \
 	--ordererTLSHostnameOverride orderer.example.com \
