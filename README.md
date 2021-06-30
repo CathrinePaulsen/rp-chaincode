@@ -2,7 +2,7 @@
 
 This repo contains three smart contracts (written in Go) demonstrating the three security vulnerabilities explored in my bachelor thesis: [Revisiting Smart Contract Vulnerabilities in Hyperledger Fabric](https://repository.tudelft.nl/islandora/object/uuid:dd09d153-a9df-4c1b-a317-d93c1231ee28?collection=education). The paper explores three reported smart contract-specific vulnerabilities in Hyperledger Fabric, their methods of exploitation, impact severity estimation and possible countermeasures. The vulnerabilities include global variables, updates using rich queries and pseudorandom number generators.
 
-Each contract include the commands used to deploy and reproduce the exploitation of the contract. The exploitations are explained in more detail in the paper.
+Each contract includes the commands used to deploy and reproduce the exploitation of the contract. The exploitations are explained in more detail in the paper.
 
 **Disclaimer: these contracts are _vulnerable to exploitation_ and should only be used for educational purposes in a designated test environment.**
 
