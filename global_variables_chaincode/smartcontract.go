@@ -3,7 +3,7 @@ Copyright 2020 IBM All Rights Reserved.
 Copyright 2021 Cathrine Paulsen All Rights Reserved.
 SPDX-License-Identifier: Apache-2.0
 
-Based and inspired by Hyperledger Fabric Samples (https://github.com/hyperledger/fabric-samples/tree/main/asset-transfer-basic/application-go)
+Based on and inspired by Hyperledger Fabric Samples (https://github.com/hyperledger/fabric-samples/tree/main/asset-transfer-basic/application-go)
 */
 
 /*
