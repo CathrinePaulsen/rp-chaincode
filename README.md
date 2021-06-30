@@ -48,3 +48,14 @@ peer chaincode invoke                     \
   -c '{"function":"<function_name>", "Args":["<argument1>,...,<argumentN>]}'
 ```
 This update transaction will be executed by all the peers whose addresses are specified after the `--peerAddresses` flag. You therefore need to include enough peer addresses to pass the endorsement policy.
+
+---
+### Enabling CouchDB
+The rich queries vulnerability requires that CouchDB is set as the state database (which is LevelDB by default).
+To set CouchDB as the state database do the following:
+* Start the test network with `./network.sh up CreateChannel
+-s couchdb`, where the `-s` flag specifies the state database
+type to deploy. Dropping the `-s` flag will deploy the default state database.
+* (Optional) To make CouchDB the default database: change `DATABASE=leveldb` to `DATABASE=couchdb` in `fabric-samples/test-network/network.sh`
+
+To inspect the CouchDB instance of a peer, use `localhost:<port_of_peer>/_utils` to access the Fauxton GUI.
