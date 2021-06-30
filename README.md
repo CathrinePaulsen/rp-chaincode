@@ -31,20 +31,20 @@ The Hyperledger Fabric `peer` CLI distinguishes between query transactions (read
 
 The following command can be used to invoke **query** transactions with `N` arguments:
 ```
-peer chaincode query
-  -C <channel_name>
-  -n <chaincode_name>
+peer chaincode query  \
+  -C <channel_name>   \
+  -n <chaincode_name> \
   -c '{"Args":["<function_name>", "<argument1>",...,"<argumentN>"]}'
 ```
 Query transactions are only executed by the peer whose address is stored in `CORE_PEER_ADDRESS`.
 
 Similarly, the following command can be used to invoke **update** transactions with `N` arguments:
 ```
-peer chaincode invoke
-  -o <orderer_information>
-  -C <channel_name> -n <chaincode_name>
-  --peerAddresses <peer1_information>
-  --peerAddresses <peer2_information>
+peer chaincode invoke                     \
+  -o <orderer_information>                \
+  -C <channel_name> -n <chaincode_name>   \
+  --peerAddresses <peer1_information>     \
+  --peerAddresses <peer2_information>     \
   -c '{"function":"<function_name>", "Args":["<argument1>,...,<argumentN>]}'
 ```
 This update transaction will be executed by all the peers whose addresses are specified after the `--peerAddresses` flag. You therefore need to include enough peer addresses to pass the endorsement policy.
